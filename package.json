@@ -1,0 +1,16 @@
+{
+  "name": "todo-console-app",
+  "version": "1.0.0",
+  "description": "A todo app that runs on the console but have the full implementation of a todo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "keywords": [
+    "todo",
+    "todo app"
+  ],
+  "author": "kingsley aham",
+  "license": "ISC"
+}
