@@ -13,7 +13,7 @@ function questionPrompt() {
   prompts.question(
     "Please enter a list item to add or a command to perform: ",
     (str = "") => {
-      str = str.trim().toLowerCase();
+      str = removeQuotesAroundString(str.trim().toLowerCase());
 
       if (!str.includes("-") && !str.includes("completed")) {
         if (addTodo(str)) {
@@ -244,5 +244,19 @@ function titleCase(str = "") {
       return word.charAt(0).toUpperCase() + word.slice(1);
     })
     .join(" ");
+}
+
+function removeQuotesAroundString(str = "") {
+  const startQuote = str.charAt(0) === '"' || str.charAt(0) === "'";
+  const endQuote =
+    str.charAt(str.length - 1) === '"' || str.charAt(str.length - 1) === "'";
+
+  if (str && str.length >= 2 && startQuote && endQuote) {
+    const sanitizedString = str.substring(1, str.length - 1);
+
+    return sanitizedString;
+  }
+
+  return str;
 }
 // ---------------------------------------------------//
