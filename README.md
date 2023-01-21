@@ -43,7 +43,7 @@ Usage:
 -show                  list all todos
 completed-             clear completed todos
 <todoName>-            delete the todo e.g 'watch movie-' removes the todo 'watch movie'
-completed <todoName>   mark the todo completed e.g 'completed watch movie' mark 'watch movie' as completed
+completed <todoName>   mark the todo completed e.g 'completed watch movie' marks 'watch movie' as completed
 
 Please enter a list item to add or a command to perform: wash plate
 Please enter a list item to add or a command to perform: watch television
