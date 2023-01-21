@@ -20,11 +20,12 @@ node index.js
 
 ## List of Commands
 
+- **`-help`** : list all help commands and their usage
 - **`-exit`** : terminate or exit application
 - **`-show`** : list todos
-- **`todoName-`** : deletes the todo
+- **`<todoName>-`** : deletes the todo
 - **`completed-`** : clear completed todos
-- **`completed todoName`** : mark the selected todo completed
+- **`completed <todoName>`** : mark the selected todo completed
 
 Watch a sample below
 

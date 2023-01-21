@@ -34,6 +34,12 @@ function runCommand(command = "") {
   const completedSingleTodoCommand = command.slice(0, 10) === "completed ";
   const removeTodoCommand = command.slice(command.length - 1) === "-";
 
+  if (command === "-help") {
+    printAllCommandsAndUsage();
+    questionPrompt();
+    return;
+  }
+
   if (command === "-show") {
     viewTodos();
     questionPrompt();
@@ -186,10 +192,11 @@ function todoExists(todoName = "") {
 
 function printCommandList() {
   const commands = [
+    "'-help'",
     "'-exit'",
     "'-show'",
-    "'todoName-'",
-    "'completed TodoName'",
+    "'<todoName>-'",
+    "'completed <TodoName>'",
     "'completed-'",
   ];
 
@@ -206,6 +213,16 @@ function exitProcess() {
     "\n***Thanks for using our our todo app. We hope to see you next time***\n"
   );
   process.exit();
+}
+
+function printAllCommandsAndUsage() {
+  print("\nUsage:\n");
+  print("-help                  list all help commands and their usage");
+  print("-exit                  terminate or exit application");
+  print("-show                  list all todos");
+  print("completed-             clear completed todos");
+  print("<todoName>-            delete the todo");
+  print("completed <todoName>   mark the todo completed\n");
 }
 
 // ---------------------------------------------------//
