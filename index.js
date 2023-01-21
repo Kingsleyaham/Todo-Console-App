@@ -208,13 +208,6 @@ function printWelcomeMessage() {
   printCommandList();
 }
 
-function exitProcess() {
-  print(
-    "\n***Thanks for using our our todo app. We hope to see you next time***\n"
-  );
-  process.exit();
-}
-
 function printAllCommandsAndUsage() {
   print("\nUsage:\n");
   print("-help                  list all help commands and their usage");
@@ -223,6 +216,13 @@ function printAllCommandsAndUsage() {
   print("completed-             clear completed todos");
   print("<todoName>-            delete the todo");
   print("completed <todoName>   mark the todo completed\n");
+}
+
+function exitProcess() {
+  print(
+    "\n***Thanks for using our our todo app. We hope to see you next time***\n"
+  );
+  process.exit();
 }
 
 // ---------------------------------------------------//
