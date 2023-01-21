@@ -32,7 +32,18 @@ Watch a sample below
 ```bash
 ➜  Todo Console App:(main) $ node index
 Welcome to a Todo Console App with Complete Todo Functionality
-Commands: '-exit', '-show', 'todoName-', 'completed TodoName', 'completed-'
+Commands: '-help', '-exit', '-show', 'todoName-', 'completed TodoName', 'completed-'
+
+Please enter a list item to add or a command to perform: -help
+
+Usage:
+
+-help                  list all help commands and their usage
+-exit                  terminate or exit application
+-show                  list all todos
+completed-             clear completed todos
+<todoName>-            delete the todo e.g 'watch movie-' removes the todo 'watch movie'
+completed <todoName>   mark the todo completed e.g 'completed watch movie' mark 'watch movie' as completed
 
 Please enter a list item to add or a command to perform: wash plate
 Please enter a list item to add or a command to perform: watch television
@@ -50,7 +61,7 @@ Wash Cloth  |  Active
 
 Please enter a list item to add or a command to perform: -view
 command does not exist
-Commands: '-exit', '-show', 'todoName-', 'completed TodoName', 'completed-'
+Commands: '-help', '-exit', '-show', 'todoName-', 'completed TodoName', 'completed-'
 
 Please enter a list item to add or a command to perform: programming
 Please enter a list item to add or a command to perform: completed programming
