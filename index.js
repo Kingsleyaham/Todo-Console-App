@@ -214,8 +214,12 @@ function printAllCommandsAndUsage() {
   print("-exit                  terminate or exit application");
   print("-show                  list all todos");
   print("completed-             clear completed todos");
-  print("<todoName>-            delete the todo");
-  print("completed <todoName>   mark the todo completed\n");
+  print(
+    "<todoName>-            delete the todo e.g 'watch movie-' removes the todo 'watch movie'"
+  );
+  print(
+    "completed <todoName>   mark the todo completed e.g 'completed watch movie' mark 'watch movie' as completed\n"
+  );
 }
 
 function exitProcess() {
